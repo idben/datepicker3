@@ -1,0 +1,105 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar{
+  position: relative;
+  display: flex;
+}
+.calendar .mLeft .ctrl{
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+.calendar .mLeft .ctrl .btnMonth{
+  cursor: pointer;
+}
+.calendar .mLeft .ctrl .btnMonth:hover{
+  color: rgb(243, 187, 18);
+}
+.calendar .mLeft .info{
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+.calendar .mRight .info{
+  font-size: 12px;
+  margin-left: 4px;
+}
+.calendar .line{
+  position: relative;
+  display: flex;
+  width: 290px;
+  flex-wrap: wrap
+}
+.calendar .line .day{
+  position: relative;
+  font-size: 12px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.calendar .line .date{
+  font-size: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  /* background-color: rgb(245, 235, 235); */
+  border-radius: 50%;
+}
+.calendar .line .date{
+  cursor: pointer;
+}
+.calendar .line .date:hover{
+    background-color: rgb(243, 210, 210);
+    border-radius: 50%;
+}
+.calendar .line .disabled{
+  cursor: not-allowed;
+  background-color: rgb(222, 218, 218);
+  color: rgb(163, 163, 163);
+}
+.calendar .line .started{
+  background-color: rgb(244, 96, 96);
+  color: rgb(252, 237, 237);
+}
+.calendar .line .disabled:hover{
+  background-color: rgb(222, 218, 218);
+  color: rgb(163, 163, 163);
+}
+.calendar .line .selectedStart{
+  background-color: rgb(244, 96, 96);
+  color: rgb(252, 237, 237);
+  border-radius: 50% 0 0 50%;
+}
+.calendar .line .selectedStart:hover{
+  background-color: rgb(243, 210, 210);
+  color: rgb(252, 237, 237);
+  border-radius: 50% 0 0 50%;
+}
+.calendar .line .selectedInclude{
+  background-color: rgb(244, 96, 96);
+  color: rgb(252, 237, 237);
+  border-radius: 0;
+}
+.calendar .line .selectedInclude:hover{
+  background-color: rgb(243, 210, 210);
+  color: rgb(252, 237, 237);
+  border-radius: 0;
+}
+.calendar .line .selectedEnd{
+  background-color: rgb(244, 96, 96);
+  color: rgb(252, 237, 237);
+  border-radius: 0 50% 50% 0;
+}
+.calendar .line .selectedEnd:hover{
+  background-color: rgb(243, 210, 210);
+  color: rgb(252, 237, 237);
+  border-radius: 0 50% 50% 0;
+}
