@@ -8,3 +8,4 @@
   如果發現 bookingList 中有陣列是記錄日期區間，會在一起始就轉換成單日
 4. 其餘的請見 js 檔中的說明
 5. [示意網址](https://idben.github.io/datepicker3/)
+6. 請給老師一顆星，讓老師知道有人來使用過
